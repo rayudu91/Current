@@ -1,0 +1,403 @@
+.column-2{
+   display: flex;
+   /* flex-direction:row; */
+   justify-content: space-around;
+   padding: 10px;
+   background-color:red;
+   width: 96%;
+}
+.l_box{
+    background-color: yellow;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* flex: 0 1 5; */
+    /* box-sizing: border-box; */
+}
+
+
+
+.r_box{
+    background-color: blue;
+    width:52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* DETAILS-------------------------------------------------- */
+.detail_box{
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-left:2em;
+    margin-bottom: 15px;
+}
+.detail_box h3{
+    margin-right: auto;
+}
+
+.frm_container {
+    width: auto;
+    padding: 2px;
+}
+  
+.frm_container a {
+    font-size: .80rem;
+    margin-left: 7em;
+    color: #0e34a0;
+    text-decoration: none;
+}
+  
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border:0.50px solid black;
+}
+input:focus{
+    border: 1px solid black;
+}
+  
+select {
+    width: 87%;
+    padding: 0.70em;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top:5px;
+    background-color:whitesmoke;
+    outline: 0;
+}
+select:focus{
+      border: 1px solid black;
+}
+  
+label {
+    font-size: 1rem;
+    text-align: left;
+} 
+  
+.btn-sd{
+    width: 70%;
+    margin-left: 20px;
+}
+/* ------------------------------------------------------------------------ */
+
+
+.a_box{
+    /* height: 35%; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 30px;
+    /* margin-top: -310px; */
+    /* background-color: violet; */
+}
+.a_box h3{
+    margin-right: auto;
+    margin-bottom: 30px
+}
+.a_box p{
+    text-align:justify;
+    font-size: .91rem;
+}
+.a_box tr,.a_box td{
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-between;
+}
+.a_box tr{
+    margin-bottom: 26px;
+}
+
+.a_box table{
+    /* background-color: yellowgreen; */
+    /* margin-right: 30px; */
+    width: 90%;
+}
+
+
+/* --------------------------------------------------------------------- */
+
+
+/* graph box----------------------------------------------------------- */
+
+.gr_box{
+    /* background-color: brown; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+.gr_box h2{
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+.gr_box span{
+    font-size: 0.85rem;
+}
+#graph{
+      width: 70%;
+      margin:1em auto;
+}
+.gr_box p{
+    text-indent: 3rem;
+    text-align: justify;
+}
+/* ----------------------------------------------------------------------------------- */
+
+/* td_box */
+.td_box{
+    /* position: absolute; */
+    width: 100%;
+    /* background-color: red; */
+    /* margin-left: 440px; */
+    /* background-color: red; */
+  }
+  .collapsible{
+    /* position: absolute; */
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: white;
+    color: #0e34a0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    width: 100%;
+    /* margin-top: 360px; */
+  }
+  .content{
+    position: relative;
+    display:none;
+    background-color: white;
+    padding: 30px;
+    /* margin-top: 400px; */
+    width: 90%;
+  }
+  #table_box h3{
+    font-size: 17px;
+    padding-left: 27px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  
+  #table_box{
+    /* background-color: red; */
+    width: 50%;
+    margin-top: 20px;
+    height: 250px;  
+  }
+  #table_box tr{
+    line-height: 1.7;
+  }
+  #table_box2{
+    /* background-color: red; */
+    width: 45%;
+    float: right;
+    /* height: auto; */
+    margin-top:20px;
+  }
+  #table_box2 h3{
+    font-size: 17px;
+    padding-left: 30px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
+  #table_box2,h3{
+    padding-left: 30px;
+  }
+  #table_box2 tr{
+    line-height: 1.7;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box-1 td_box">
+                        <h2><a href="#">TECHNICAL DETAILS<span class="fa fa-angle-down"></span></a></h2>
+                      <div class="table_box">
+                        <table class="t-1">
+                            <tr><th colspan="2" style="border-bottom: 1px solid black;">Recommended Water Heater</th></tr> 
+                            <tr>
+                                <td>TYPE</td>
+                                <td>Hybrid Electric Heat Pump</td>
+                            </tr>
+                            <tr>
+                                <td>Tank Capacity</td>
+                                <td>65 gal</td>
+                            </tr>
+                            <tr>
+                                <td>Energy Factor</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>Manufacturer</td>
+                                <td>Rheem</td>
+                            </tr>
+                            <tr>
+                                <td>Circuit Breaker Size</td>
+                                <td>15 amp</td>
+                            </tr>
+                            <tr>
+                                <td>Warranty</td>
+                                <td>10years</td>
+                            </tr>
+                        </table>
+                        <table class="t-2">
+                            <tr><th colspan="2" style="border-bottom: 1px solid black;">Current Water Heater</th></tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Natural Gas Water Heater</td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td>9 years</td>
+                            </tr>
+                            <tr>
+                                <td>Expected remaining life</td>
+                                <td>3 years</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+<div class="box-1 bi_box">
+                     <h2><a href="#">BASIC INFORMATION <span class="fa fa-angle-down"></span></a></h2>
+                     <div class="bi-txt">
+                         <h4>1. What is the Heat Pump Water Heater (HPWH)?</h4>
+                         <p>A heat pump water heater uses electricity to move heat from surrounding air to the tank
+                            water instead of heating the water directly. This process makes them three to four times 
+                            more energy efficient than conventional electric resistance water heaters and can cut water
+                            heating costs by up to 70% compared to a conventional electric water heater. (The  savings
+                            are less when compared to a conventional natural gas water heater.) From a user's perspective,
+                            a HPWH operates similarly to a conventional water heater.</p>
+                        <h4>2. What is a hybrid HPWH?</h4>
+                        <p>A typical HPWH is sometimes referred to as a hybrid HPWH. This means that it has an electric
+                            resistance heating element as a backup to the heat pump technology. If water needs to be heated
+                            faster than the heat pump is capable of (such as when there's an unusually great need for hot water),
+                            the resistance element can be used to reduce the time required to make hot water available.</p>
+                        <h4>3.What tank sizes are available for HPWHs?</h4>
+                        <h4>4.What are the advantages and disadvantages of using a HPWH?</h4>
+                        <h4>5.Is a tankless electric water heater more efficient?</h4>
+                     </div>
+                    </div>
+
+
+
+
+
+
+                    .td_box{
+    /* background-color: chocolate; */
+    padding: 15px;
+    margin-bottom: 12px;
+}
+.table_box{
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+}
+.t-1{
+    /* background-color: #ffd53f; */
+    width: 55%;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.table_box th{
+    margin:5px;
+}
+.t-2{
+    /* background-color: violet; */
+    width: 40%;
+    text-align: left;
+}
+
+
+
+/*technical Details------------------------------------------------------------------  */
+.td_box{
+    /* background-color: chocolate; */
+    padding: 15px;
+    margin-bottom: 12px;
+}
+.table_box{
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+}
+.t-1{
+    /* background-color: #ffd53f; */
+    width: 55%;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.table_box th{
+    margin:5px;
+}
+.t-2{
+    /* background-color: violet; */
+    width: 40%;
+    text-align: left;
+}
+/* ------------------------------------------------ */
+.bi_box{
+    /* background-color:blueviolet; */
+    display: flex;
+    flex-direction: column;
+    padding: 12 px;
+    /* align-items: center; */
+}
+.bi-txt{
+    /* background-color:red; */
+    text-align: left;
+}
+.bi-txt h4{
+    margin-bottom: 15px;
+}
+.bi-txt p{
+    text-align: justify;
+    text-indent: 20px;
+    margin-top: 0px;
+}

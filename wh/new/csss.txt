@@ -1,0 +1,140 @@
+
+.box1{
+    /* background-color: purple; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.box2{
+    background-color: saddlebrown;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* details */
+
+
+#details_box{
+    display: flex;
+    flex-direction: column;
+    /* background-color: turquoise; */
+}
+
+.frm_container {
+    width: auto;
+    padding: 2px;
+  }
+  
+  .frm_container a {
+    font-size: .80rem;
+    margin-left: 7em;
+    color: #0e34a0;
+    text-decoration: none;
+  }
+  
+  input[type="text"] {
+    width: 73%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border:0.50px solid black;
+  }
+  input:focus{
+    border: 1px solid black;
+  }
+  select {
+    width: 80%;
+    padding: 0.70em;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top:5px;
+    background-color:whitesmoke;
+    outline: 0;
+  }
+  select:focus{
+      border: 1px solid black;
+  }
+  label {
+    font-size: 1rem;
+    float: left;
+    margin-left: 35px;
+  } 
+  
+  #s_d {
+    /* justify-content: center; */
+    background-color: #ffd53f;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 18px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: sans-serif;
+    letter-spacing: 0.75px;
+  }
+
+/* Assumptions */
+  #a_box{
+    /* height: 35%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    /* background-color: violet; */
+}
+#a_box h3{
+    margin-left: -180px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#a_box tr,td{
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-between;
+}
+#a_box tr{
+    margin-bottom: 26px;
+}
+
+#a_box table{
+    /* background-color: yellowgreen; */
+    /* margin-right: 30px; */
+    width: 90%;
+}
+
+
+#gr_box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+}
+
+#td_box{
+    background-color:blueviolet;
+    display: flex;
+}
+.td_table{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-top:20px ;
+}
+.td_1{
+    background-color: #0e34a0;
+    display: flex;
+    /* width: 40%; */
+}
+.td_2{
+    background-color: #ffd53f;
+    width: 40%;
+}
+#bi_box{
+      background-color: chartreuse;
+}

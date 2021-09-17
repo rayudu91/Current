@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="new.js"></script>
+    <title>Water Heater</title>
+</head>
+
+<body>
+    <div class="topbar" id="navbar">
+        <a href="#"><img src="ytlogo.png" alt=""></a>
+        <div id="nav_item">
+            <a href="#"><strong>Dashboard</strong></a>
+            <a href="#">Usage</a>
+            <a href="#">Why Electrify?</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#"><img src="" alt="" id="notif_bell"></a>
+            <a href="#">asp1 <span class="fa fa-angle-down"></span></a>
+        </div>
+        <!-- <a href="#" class="nav">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </a> -->
+        <div class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div id=topItem>
+            <a href="#">Dashboard</a>
+            <a href="#">Usage</a>
+            <a href="#">Why Electrify</a>
+        </div>
+    </div>
+    <div id="back">
+        <a href="#"><span class="fa fa-chevron-left"></span> Back </a>
+    </div>
+    <div class="container">
+        <section>
+            <h1>Heat Pump Water Heater</h1>
+            <p class="f_txt"> Most homes still have a conventional natural gas or electric water
+                heater, but many customers are new selecting super-efficient electirc
+                water heaters --<b>heat pump water heaters</b>.These are the best
+                options for low energy costs & low impacts on climate.</p>
+        </section>
+        <div class="columns">
+            <div class="col-1"><img src="w-1.png" alt="waterheater" width="220px" height="280px" /> </div>
+            <div class="col-2">
+                <div class="box-1 c_box">
+                    <div class="u_v">
+                        <p>&#36;182</p>
+                        <span class="t_tip" id="n_c">Net Cost<span class="tt_text">Net cost = Upfront
+                                cost - Incentives
+                            </span>
+                        </span>
+                    </div>
+                    <div class="b_v">
+                        <div id="u_c">
+                            <p>&#36;4,282</p>
+                            <span class="t_tip" id="u_cost">upfront Cost<span class="tt_text">Includes equipment, labor, permits etc.</span></span>
+
+                        </div>
+                        <div id="inc">
+                            <p>&#36;4,100 <br><button id="myBtn" onclick="pop_i()">Incentives</button></p>
+                            <span class="t_tip" id="i_tip" style="padding-left: 0px;"><br><img src="q.png" style="width: 8px;"  alt=""><span class="tt_text">Available tax credits and rebates.</span></span>
+                        </div>
+                    </div>  
+                </div>
+                <div class="box-1 s_box">
+                    <img src="marketPlace.png" alt="market image" id="m_i">
+                    <div class="shop_box">
+                        <p>Find your heat pump water heater</p>
+                        <button class="btn btn-accent" id="btn_start">
+                            <strong> START SHOPPING </strong>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="years" id="yr_bx">
+            <button id="t_yr" onclick="yr_btn()">20YEAR</button>
+            <button id="o_yr" onclick="yr_btn()">1YEAR</button>
+            <button id="month_btn" onclick="yr_btn()">1MONTH</button>
+        </div>
+        <div class="column-2">
+            <div class="l_box">
+<!-- ---------------------------------__DETAILS FORM CARD -->
+                <div class="box-1 detail_box">
+                    <form action="/" method="POST" id="form_card">
+                        <h3>DETAILS</h3>
+                        <div class="form-group">
+                            <label>Make & Model <span><a href="#" id="choose">Choose</a></span><a href="#" id="hm_c">Help Me Choose</a></label>
+                            <select class="form-control" id="m&m">
+                                <option>Rheem Performance Platinum 80</option>
+                                <option>Rheem Prtoeterra 15A 40</option>
+                                <option>Sanden SANCO2 119</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>No. of people in household</label>
+                            <input type="text" class="form-control" id="people" placeholder="Enter 1-10">
+                        </div>
+                        <div class="form-group">
+                            <label>Current electric appliance</label><span class="t_tip" id="i_tip" style="padding-left: 2px;"><img src="q.png" style="width: 8px;"  alt=""><span class="tt_text" id="current_app">Indicate if your appliance is electric so that we can better analyze your energy needs</span></span>
+                            <select id="ce_a">
+                              <option>Water Heater</option>
+                              <option>Cooking Range</option>
+                              <option>Clothes Dryer</option>
+                            </select>                           
+                        </div>  
+                        <div class="form-group">
+                            <label>Age of Current Water Heater</label>
+                            <input type="text" class="form-control" id="cwh_age">
+                        </div>
+                    </form>
+                    <button class="btn btn-sd" id="s_d" onclick="pop_d()">SAVE DETAILS</button>
+    
+                </div>
+<!-- --------------------ASSUMPTIONS CARD--------------------------------------- -->
+                <div class="box-1 a_box">
+                    <h3>ASSUMPTIONS</h3>
+                    <table>
+                        <tr>
+                            <td>Natural gas escalation rate&#42;</td>
+                            <td>4.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Electricity escalation rate&#42;</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td>Propane escalation rate&#42;</td>
+                            <td>4.4%</td>
+                        </tr>
+                        <tr>
+                            <td>Fuel Oil escalation rate&#42;</td>
+                            <td>4.4%</td>
+                        </tr>
+                    </table>
+                    <p> <span>&#42;</span>Annual rates applied only to 20 year analysis</p>
+                </div>
+            </div>
+<!-- Estimation Graph CARD -------------------------------------------------------------------------->
+            <div class="r_box">
+                <div class="box-1 gr_box">
+                    <h2>Your <span id="year_value">1 year</span> projected <span class="t_tip" id="es_txt">energy savings <span class="tt_text" id="es-txt">Your solar system has been sized to provide sufficient
+                        energy to operate your Heat Pump Water Heater, eliminating the need to heat water with utility power.</span>
+                    </span> is &#36;<span id="c_value">1,717</h2>
+                    <span>Energy savings = Energy cost with gas water heater - Energy cost with HPWH</span>
+                    <img src="graph.png" alt="" id="graph">
+                    <p>Your solar system has been sized to produce enough energy to
+                        power you r heat pump water heater. Removing solar will increase
+                        your energy cost with HPWH, thus decreasing your energy savings.</p>
+                </div>
+<!-- TECHNICAL DETAILS CARD---------------------------------------------------------------->
+                <div class="box-1 td_box">
+                    <div class="collapsible">
+                        <p class="exp_btn" onclick="toggle()">Technical Details <span class="fa fa-chevron-down" id="arrow_id"></span></p>
+                    </div>
+                    <div class="content" id="content_box">
+                        <div id="table_box">
+                            <h3>Recommended Water Heater</h3>
+                            <table>
+                                <tr>
+                                    <td>Type</td>
+                                    <td>Hybrid Electric Heat Pump</td>
+                                </tr>
+                                <tr>
+                                    <td>Tank Capacity</td>
+                                    <td>65 gal</td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Factor</td>
+                                    <td>3.55</td>
+                                </tr>
+                                <tr>
+                                    <td>Manufacturer</td>
+                                    <td>Rheem</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Circuit breaker size</td>
+                                    <td>15 amp</td>
+                                </tr>
+                                <tr>
+                                    <td>Warranty</td>
+                                    <td>10 years</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="table_box2">
+                            <h3>Current Water Heater</h3>
+                            <table>
+                                <tr>
+                                    <td>Type</td>
+                                    <td>Natural Gas Water Heater</td>
+                                </tr>
+                                <tr>
+                                    <td>Age</td>
+                                    <td>9 years</td>
+                                </tr>
+                                <tr>
+                                    <td>Expected remaining life</td>
+                                    <td>3 years</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+<!-------------------- BASIC INFORMATION CARD ---------------------------------------------------------------->
+                <div class="box-1 bi_box">
+                    <div class="collapsible">
+                        <p class="exp-btn" onclick="toggle2()">Basic Information <span class="fa fa-chevron-down" id="arrow_id1"></span></p>
+                    </div>
+                    <div class="content2" id="content_box2">
+                        <div class="qstn_txt" onclick="toggle3()">1. What is the Heat Pump Water Heater?</div>
+                        <p id="ans_txt">A heat pump water heater uses electricity to move heat from surrounding air to
+                            the tank
+                            water instead of heating the water directly. This process makes them three to four times
+                            more energy efficient than conventional electric resistance water heaters and can cut water
+                            heating costs by up to 70% compared to a conventional electric water heater. (The savings
+                            are less when compared to a conventional natural gas water heater.) From a user's
+                            perspective,
+                            a HPWH operates similarly to a conventional water heater.
+                        </p>
+                        <div class="qstn_txt" onclick="toggle4()">2. What is a hybrid HPWH?</div>
+                        <p id="ans_txt1">A typical HPWH is sometimes referred to as a hybrid HPWH. This means that it
+                            has an electric
+                            resistance heating element as a backup to the heat pump technology. If water needs to be
+                            heated
+                            faster than the heat pump is capable of (such as when there's an unusually great need for
+                            hot water),
+                            the resistance element can be used to reduce the time required to make hot water available.
+                        </p>
+                        <div class="qstn_txt" onclick="toggle5()">3. What tank sizes are available for HPWHs?</div>
+                        <p id="ans_txt2">
+                            HPWHs come with different tank sizes. The most common sizes currently on the market are 50,
+                            65, and 80
+                            gallon units. Smaller systems, such as 40 gallon units, are also becoming available. Under
+                            normal circumstances,
+                            consumers replacing a conventional water heater with a heat pump water heater of the same
+                            size should not notice
+                            a significant change in the amount of hot water available.
+                        </p>
+                        <div class="qstn_txt" onclick="toggle6()">4. What are the advantages and disadvantages of using
+                            a HPWH?</div>
+                        <div id="ans_txt3">
+                            <div>Advantages:</div>
+                            <ul>
+                                <li>Use a proven, energy-efficient technology to heat water.</li>
+                                <li>When replacing a natural gas water heater, there will be a substantial reduction in
+                                    your carbon footprint.
+                                    In addition, you will likely enjoy a reduction in energy costs, but it may not be
+                                    substantial. Pairing the
+                                    HPWH with a solar array can generate substantial energy cost savings compared to a
+                                    conventional gas water
+                                    heater.</li>
+                                <li>If you currently have an electric water heater, switching to a HPWH can reduce your
+                                    electric water heating
+                                    costs by up to 70% and may also reduce your home’s carbon footprint.</li>
+                            </ul>
+                            <div>Disadvantages:</div>
+                            <ul>
+                                <li>Higher up-front cost when compared to conventional tank-type water heaters. Rebates
+                                    are sometimes available,
+                                    however, to reduce the up-front cost disadvantage.</li>
+                                <li>If replacing a natural gas water heater, wiring will need to be run to the unit.
+                                    Most HPWHs require 240 V electricity,
+                                    but some are being developed that will function with 120 V.</li>
+                                <li>Noisier than conventional water heaters, sounding similar to an air conditioner.
+                                    Accordingly, they may not be as well
+                                    suited if located in an interior space (such as an interior closet).</li>
+                            </ul>
+                        </div>
+
+                        <div class="qstn_txt" onclick="toggle7()">5. Is a tankless electric water heater more efficient?
+                        </div>
+                        <p id="ans_txt4">No. Tankless electric water heaters can be at most 100% efficient as they
+                            directly heat the water with electricity. A HPWH just
+                            moves heat and can be effectively 300-400% efficient. The efficiency rating can be obtained
+                            by multiplying the EF (Energy Factor)
+                            rating of the HPWH by 100.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p id="dsc_txt">The results and projections are estimates based on available data.</p>
+        </div>
+    </div>
+
+
+    <!-- POP UP MODAL FOR INCENTIVEs -->
+    <div  id="myModal" class="modal">
+        <div class="modal-content" id="m_content">
+            <!-- <span class="close">&times;</span> -->
+            <div id=i_head><b>Incentives Breakdown</b></div>
+            <table>
+                <tr>
+                    <td><a href="#">Federal Tax Credit&#42;</a></td>
+                    <td>&#36;300</td>
+                </tr>
+                <tr>
+                    <td><a href="#">PG&E Rebate&#42;</a></td>
+                    <td>&#36;3000</td>
+                </tr>
+                <tr>
+                    <td><a href="#">SVCE CARE/FERA Adder&#42;</a></td>
+                    <td>&#36;2,500</td>
+                </tr>
+                <tr>
+                    <td><a href="#">BayREN Home+ Rebate&#42;</a></td>
+                    <td>&#36;1,000</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>&#36;4,100</strong></td>
+                </tr>
+            </table>
+            <div id="i_tip">&#42;Special conditions may apply</div>
+        </div>
+    </div>
+<!-- -----------Save Details------- -->
+<div id="myModal2" class="modal2">
+    <div class="modal-content modal-2" id="m_content2" >
+        <h2>Selected Input Details</h2>
+        <table>
+            <tr>
+                <td>Make & Model: </td>
+                <td id="input1"></td>
+            </tr>
+            <tr>
+                <td>Members in House: </td>
+                <td id="input2"></td>
+            </tr>
+            <tr>
+                <td>Current Appliances: </td>
+                <td id="input3"></td>
+            </tr>
+            <tr>
+                <td>Age of Water Heater: </td>
+                <td id="input4"></td>
+            </tr>
+        </table>
+</div>
+</div>
+
+</body>
+<footer>
+    <a href="#">Do Not Sell My Info</a>
+    <a href="#">Privacy Policy</a>
+</footer>
+
+</html>

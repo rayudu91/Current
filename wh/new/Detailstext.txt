@@ -1,0 +1,89 @@
+<h3>DETAILS</h3>
+                    <label for="#">Make & model <span><a href="#">Help Me Choose</a></span></label>
+                    <select type="text" id="mm_txt">
+                        <option >Select an Option</option>
+                        <option>Rheem Performance Platinum 80</option>
+                        <option>Rheem Performance Platinum 50</option>
+                    </select><br /><br />
+                    <label for="#">No. of people in household</label>
+                    <input type="text" id="n_p"/><br /><br />
+                    <label for="#">Current electric appliances</label>
+                    <select type="text" id="ce_a">
+                        <option>Select an Option</option>
+                        <option>Clothes dryer</option>
+                        <option>Cooking Range</option>
+                        <option>Water Heater</option>
+                    </select><br /><br />
+                    <label for="#">Age of current water heater</label>
+                    <input type="text" id="age"/><br /><br /><button class="btn btn-sd" id="s_d" onclick="pop_d()">
+                        <strong>SAVE DETAILS</strong>
+                    </button>
+
+
+.detail_box h3{
+    margin-right: auto;
+    padding-left: 0 ;
+}
+.frm_container {
+    /* width: auto; */
+    padding: 2px;
+}
+  
+.detail_box a {
+    font-size: .80rem;
+    margin-left: 6em;
+    color: #0e34a0;
+    text-decoration: none;
+}
+  
+
+input[type="text"] {
+    width: 89%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    /* background-color: none; */
+    border:0.50px solid black;
+}
+input:focus{
+    border: 1px solid black;
+}
+  
+select {
+    width: 96%;
+    padding: 0.70em;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top:5px;
+    background-color:white;
+    outline: 0;
+}
+select:focus{
+      border: 1px solid black;
+}
+#mm_txt option, #ce_a option{
+    font-size: 16px;
+    cursor: pointer;
+}
+label {
+    font-size: 1rem;
+    text-align: left;
+}
+/* .overselect{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+} 
+#checkboxes{
+    display: none;
+    flex-direction: column;
+    border: 1px solid white;
+} */
+.btn-sd{
+    /* width: 100%; */
+    padding: 0.60rem;
+    margin-left: 0px;
+}
